@@ -22,8 +22,6 @@ Jira
 npx create-react-app jira --template typescript
 ```
 
-## 配置 eslint、prettier 和 commitlint 规范工程
-
 #### 配置 base 文件路径
 
 tsconfig.json 增加 baseUrl 配置
@@ -33,6 +31,8 @@ tsconfig.json 增加 baseUrl 配置
 ```
 
 后面使用路径都可以用 import logo from "src/logo.svg";
+
+## 配置 eslint、prettier 和 commitlint 规范工程
 
 #### 格式化工具 prettier
 
@@ -50,4 +50,12 @@ echo > .prettierignore
 ```
 npx mrm@2 lint-staged
 yarn add eslint-config-prettier -D
+```
+
+#### commitlint 规范工程
+
+https://github.com/conventional-changelog/commitlint
+
+```
+yarn add @commitlint/{config-conventional,cli}
 ```
