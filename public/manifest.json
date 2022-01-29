@@ -1,4 +1,3 @@
-// pwa配置,如果vscode标红注释，右下角文件类型选择 JSON with Comments
 {
   "short_name": "React App",
   "name": "Create React App Sample",
