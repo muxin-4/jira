@@ -61,7 +61,12 @@ https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/con
 yarn add @commitlint/{config-conventional,cli}
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'
-
+```
 
 ## Mock
+
+```
+npm i json-server -g
+json-server --watch db.json
+yarn add json-server -D
 ```
