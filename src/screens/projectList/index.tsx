@@ -7,6 +7,10 @@ import * as qs from "qs";
 const apiUrl = process.env.REACT_APP_API_URL;
 
 export const ProjectListScreen = () => {
+  interface T {
+    name: string;
+    personId: string;
+  }
   const [param, setParam] = useState({
     name: "",
     personId: "",
