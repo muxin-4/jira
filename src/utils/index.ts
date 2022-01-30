@@ -26,24 +26,19 @@ export const useMount = (callback: () => void) => {
 };
 
 export const debounce = (func: () => void, delay: number) => {
-  console.log("debounce1");
   let timeout: ReturnType<typeof setTimeout>;
 
   return () => {
-    console.log("debounce2");
     if (timeout) {
-      console.log("debounce3");
       clearTimeout(timeout);
     }
-    console.log("debounce4");
     timeout = setTimeout(function () {
-      console.log("debounce5");
       func();
     }, delay);
   };
 };
 
-export const useDebounce = (value: unknown, delay?: number) => {
+export const useDebounce = <V>(value: V, delay?: number) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
   useEffect(() => {
