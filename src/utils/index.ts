@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 export const isFalsy = (value: unknown) => (value === 0 ? false : !value);
 
 export const cleanObject = (object: object) => {
-  // Object.assign({}, object)
-  console.log("aaa1", object);
   const result = { ...object };
   Object.keys(result).forEach((key) => {
     // @ts-ignore
@@ -15,7 +13,6 @@ export const cleanObject = (object: object) => {
     }
   });
 
-  console.log("aaa2", result);
   return result;
 };
 
